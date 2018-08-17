@@ -1,5 +1,6 @@
 // Code your solution in this file!
-const expect = chai.expect;
+
+
 
 describe('index.js', function() {
   describe('distanceFromHqInBlocks()', function() {
