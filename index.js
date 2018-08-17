@@ -8,23 +8,19 @@ function distanceFromHqInFeet(blockNum) {
   return (264*(distanceFromHqInBlocks(blockNum)));
 }
 
-functino distanceTravelledInFeet(b1, b2) {
-  
-  
+function distanceTravelledInFeet(b1, b2) {
+  return Math.abs(b1-b2)*264;
 }
-  describe('distanceTravelledInFeet()', function() {
-    it('returns the distance travelled in feet', function() {
-      expect(distanceTravelledInFeet(43, 48)).to.equal(1320);
-    });
 
-    it('returns a distance in feet', function() {
-      expect(distanceTravelledInFeet(50, 60)).to.equal(2640);
-    });
-
-    it('returns distance when destination is below distance', function() {
-      expect(distanceTravelledInFeet(34, 28)).to.equal(1584);
-    });
-  });
+function calculatesFarePrice (b1, b2) { 
+  const distance = distanceTravelledInFeet(b1, b2); 
+  
+  
+  if (distance <= 400) { 
+    return 0; 
+  } else if (distance > 400 && )
+  
+} 
 
   describe('calculatesFarePrice(start, destination)', function() {
     it('gives customers a free sample', function() {
