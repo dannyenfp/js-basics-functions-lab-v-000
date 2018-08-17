@@ -1,39 +1,17 @@
 // Code your solution in this file!
 
+function distanceFromHqInBlocks(blockNum) {
+  return (blockNum - 42);
+}
 
+function distanceFromHqInFeet(blockNum) {
+  return (264*(distanceFromHqInBlocks(blockNum)));
+}
 
-describe('index.js', function() {
-  describe('distanceFromHqInBlocks()', function() {
-    it('returns a distance in blocks', function() {
-      expect(distanceFromHqInBlocks(43)).to.equal(1);
-    });
-
-    it('returns a distance in blocks', function() {
-      expect(distanceFromHqInBlocks(50)).to.equal(8);
-    });
-
-    it('calculates distances below 42nd street', function() {
-      expect(distanceFromHqInBlocks(34)).to.equal(8);
-    });
-  });
-
-
-
-
-  describe('distanceFromHqInFeet()', function() {
-    it('returns a distance in feet', function() {
-      expect(distanceFromHqInFeet(43)).to.equal(264);
-    });
-
-    it('returns a distance in feet', function() {
-      expect(distanceFromHqInFeet(50)).to.equal(2112);
-    });
-
-    it('calculates distances below 42nd street', function() {
-      expect(distanceFromHqInFeet(34)).to.equal(2112);
-    });
-  });
-
+functino distanceTravelledInFeet(b1, b2) {
+  
+  
+}
   describe('distanceTravelledInFeet()', function() {
     it('returns the distance travelled in feet', function() {
       expect(distanceTravelledInFeet(43, 48)).to.equal(1320);
