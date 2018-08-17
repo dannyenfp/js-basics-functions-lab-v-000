@@ -1,7 +1,7 @@
 // Code your solution in this file!
 
 function distanceFromHqInBlocks(blockNum) {
-  return (blockNum - 42);
+  return Math.abs(blockNum - 42);
 }
 
 function distanceFromHqInFeet(blockNum) {
